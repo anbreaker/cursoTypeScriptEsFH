@@ -1,31 +1,32 @@
 // Funciones Básicas
-function add(a, b) {
+const add = (a: number, b: number): number => {
   return a + b;
-}
+};
 
-const count = (heroes) => {
+const count = (heroes: string[]): number => {
   return heroes.length;
 };
-const superHeroes = ['Flash', 'Arrow', 'Superman', 'Green Lantern'];
+
+const superHeroes: string[] = ['Flash', 'Arrow', 'Superman', 'Green Lantern'];
 count(superHeroes);
 
 //Parametros por defecto
-const callBatman = (call) => {
+const callBatman = (call: boolean = true): void => {
   if (call) {
-    console.log('Batiseñal activada');
+    console.log('BatSignal Activate!');
   }
 };
 
-callBatman();
+callBatman(true);
 
 // Rest?
-const linkHeros = (persons) => {
+const linkHeros = (...persons: string[]): string => {
   return persons.join(', ');
 };
 
 // Tipo funcion
-const doNothing = (nmbr, text, bool, arr) => {};
+const doNothing = (nmbr: number, text: string, bool: boolean, arr: string[]): void => {};
 
-// Crear el tipo de funcion que acepte la funcion "noHaceNada"
-let nothingEither;
+// Crear el tipo de funcion que acepte la funcion "doNothing"
+let nothingEither: (nmbr: number, text: string, bool: boolean, arr: string[]) => void;
 nothingEither = doNothing;
