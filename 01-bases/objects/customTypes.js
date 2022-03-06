@@ -1,19 +1,21 @@
-(function () {
-    var flash = {
+"use strict";
+(() => {
+    let flash = {
         name: 'Barry Allen',
         age: 24,
         powers: ['super speed', 'time travel'],
-        getName: function () {
+        getName() {
             return this.name;
-        }
+        },
     };
-    var superman = {
+    let superman = {
         name: 'Clark Kent',
         age: 60,
         powers: ['super speed'],
-        getName: function () {
+        getName() {
             return this.name;
-        }
+        },
     };
     console.log(flash.getName());
 })();
+//# sourceMappingURL=customTypes.js.map

@@ -1,15 +1,16 @@
-(function () {
-    var fullName = function (firstName, lastName, upper) {
-        if (upper === void 0) { upper = false; }
+"use strict";
+(() => {
+    const fullName = (firstName, lastName, upper = false) => {
         if (upper) {
-            return "".concat(firstName, " ").concat(lastName || '').toUpperCase();
+            return `${firstName} ${lastName || ''}`.toUpperCase();
         }
         else {
-            return "".concat(firstName, " ").concat(lastName || '');
+            return `${firstName} ${lastName || ''}`;
         }
     };
-    var name = fullName('Tony', 'Stark', true);
-    var name2 = fullName('Tony', '', true);
-    console.log({ name: name });
-    console.log({ name2: name2 });
+    const name = fullName('Tony', 'Stark', true);
+    const name2 = fullName('Tony', '', true);
+    console.log({ name });
+    console.log({ name2 });
 })();
+//# sourceMappingURL=args-default.js.map

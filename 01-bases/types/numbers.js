@@ -7,8 +7,8 @@
         console.log('Problems!');
     else
         console.log('Save!');
-    // NaN is a number in js
-    avengers = Number('123a'); // NaN
+    avengers = Number('123a');
     avengers = 123;
     console.log({ avengers });
 })();
+//# sourceMappingURL=numbers.js.map

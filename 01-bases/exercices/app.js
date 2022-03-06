@@ -14,3 +14,4 @@ const msg = 'Hello!';
 const sayHello = (msg) => {
     console.log(msg);
 };
+//# sourceMappingURL=app.js.map

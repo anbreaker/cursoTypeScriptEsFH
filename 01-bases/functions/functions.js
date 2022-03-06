@@ -1,11 +1,13 @@
-(function () {
-    var hero = 'Flash';
+"use strict";
+(() => {
+    const hero = 'Flash';
     function returnName() {
         return hero;
     }
-    var activateBatSignal = function () {
+    const activateBatSignal = () => {
         return 'BatSignal!!';
     };
     console.log(typeof activateBatSignal);
-    var heroName = returnName();
+    const heroName = returnName();
 })();
+//# sourceMappingURL=functions.js.map

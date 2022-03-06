@@ -1,7 +1,9 @@
-(function () {
-    // const numbers: (string | number | boolean)[] = [1, 2, 3, 4, 5, '6', 7, 8, 9, 10];
-    var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+"use strict";
+(() => {
+    const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     console.log(numbers);
-    var villians = ['Venon', 'Dr Octopus'];
-    villians.forEach(function (v) { return console.log(v.toUpperCase()); });
+    const villians = ['Venon', 'Dr Octopus'];
+    villians.forEach((v) => console.log(v.toUpperCase()));
+    numbers.forEach((v) => console.log(v));
 })();
+//# sourceMappingURL=arrays.js.map

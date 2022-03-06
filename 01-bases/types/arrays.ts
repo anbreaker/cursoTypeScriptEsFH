@@ -7,4 +7,6 @@
   const villians: string[] = ['Venon', 'Dr Octopus'];
 
   villians.forEach((v) => console.log(v.toUpperCase()));
+
+  numbers.forEach((v) => console.log(v));
 })();

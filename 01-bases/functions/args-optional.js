@@ -1,7 +1,9 @@
-(function () {
-    var fullName = function (firstName, lastName) {
-        return "".concat(firstName, " ").concat(lastName || '');
+"use strict";
+(() => {
+    const fullName = (firstName, lastName) => {
+        return `${firstName} ${lastName || ''}`;
     };
-    var name = fullName('Tony');
-    console.log({ name: name });
+    const name = fullName('Tony');
+    console.log({ name });
 })();
+//# sourceMappingURL=args-optional.js.map
