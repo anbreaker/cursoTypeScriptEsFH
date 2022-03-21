@@ -1,8 +1,6 @@
 "use strict";
 (() => {
     class Avenger {
-        name;
-        realName;
         constructor(name, realName) {
             this.name = name;
             this.realName = realName;
@@ -13,7 +11,6 @@
         }
     }
     class Xmen extends Avenger {
-        isMutant;
         constructor(name, realName, isMutant) {
             super(name, realName);
             this.isMutant = isMutant;
